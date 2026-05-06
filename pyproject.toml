@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ambie"
+version = "0.1.0"
+description = "Official Python SDK for AMBIE — speech-to-text, translation, TTS, embeddings, sentiment, summarization, moderation, and language detection."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "AMBIE", email = "contact@ambie.ai" }]
+requires-python = ">=3.9"
+keywords = [
+  "ambie",
+  "speech-to-text",
+  "transcription",
+  "asr",
+  "translation",
+  "tts",
+  "embeddings",
+  "sentiment",
+  "summarization",
+  "moderation",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://ambie.ai"
+Documentation = "https://ambie.ai/sdk"
+Repository = "https://github.com/ambie-ai/ambie-sdk-python"
+Issues = "https://github.com/ambie-ai/ambie-sdk-python/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ambie"]
